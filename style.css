@@ -1,0 +1,284 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background : url(pic/bg.jpg);
+    background-size: auto;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: fit-content;
+}
+
+.main{
+    width: 100%;
+    background: url("pic/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar{
+    width: 86%;
+    display: flex;
+    top: 0;
+    right: 0;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.navbar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
+    justify-content: space-between;
+}
+
+ul{
+    margin-top: -4%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+   
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    margin-top: -3%;
+    transition: .4s ease;
+
+}
+
+ul li a:hover{
+    color: rgb(230,104,59);
+}
+
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.info h1{
+    font-size: 65px;
+    color: rgb(36,32,30);
+}
+
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span{
+    color: rgb(230,104,59);
+}
+
+.info a{
+    text-decoration:  none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover{
+    background: rgb(59,174,209);
+}
+
+.image{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    top: 300px;
+}
+
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .girl{
+    left: 55%;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
+
+.icons ion-icon{
+    margin-left: 7%;
+    color: #000;
+    margin-right: -60px;
+    font-size: 40px;
+    transition: .4s ease;
+    
+}
+
+.icons ion-icon:hover{
+    color: rgb(59,174,209);
+}
+.Skill {
+   
+    font-family: 'Times New Roman', Times, serif;
+}
+
+* {box-sizing: border-box}
+
+.container {
+  padding: 16px;
+  align-items: center;
+  align-content: center;
+  margin: 50px auto;
+  ;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color:black;
+  color: white;
+  padding: 16px 20px;
+  margin-left: 50px;
+  margin: 8px 0;
+  border:none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  margin-left: 100px;
+  
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+
+}
+.AddInfo{
+
+    text-decoration:  none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    font-family:monospace;
+}
+
+button {
+    background-color:black;
+    color: white;
+    padding-inline: 16px;
+    padding-block: 8px;
+    border-radius: 8px;
+  }
+
+  footer{
+    text-align : center;
+    padding : 10px;
+    background-color: black;
+    color: white;
+    position : fixed;
+    width : 100%;
+    bottom : 0;
+
+  }
+
+  .quotes {
+    text-decoration:  none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block; 
+  }
+
+  @media screen and (width <= 875px){
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main{
+        height: fit-content;
+    }
+
+    .image{
+        position: relative;
+        top: 0;
+    }
+
+    .image img{
+        position: relative;
+        transform: translate(0);
+        left: auto;
+    }
+    .icons ion-icon{
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    footer{
+        position: relative;
+        bottom: auto;
+    }
+  }
+
